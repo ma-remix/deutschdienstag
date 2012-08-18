@@ -1,3 +1,39 @@
+@font-face {
+  font-family: "SSSocial";
+  src: url('fonts/ss-social-circle.eot');
+  src: url('fonts/ss-social-circle.eot?#iefix') format('embedded-opentype'),
+       url('fonts/ss-social-circle.woff') format('woff'),
+       url('fonts/ss-social-circle.ttf') format('truetype'),
+       url('fonts/ss-social-circle.svg#SSSocialCircle') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.symbol {
+  font-family: "SSSocial", Georgia, serif !important;
+
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  white-space: nowrap;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  -o-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+
+  font-size:   40px;
+  line-height: 40px;
+  color: inherit;
+}
+
+a:hover {
+  color: red;
+}
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing:    border-box;
@@ -41,6 +77,7 @@ p {
 }
 
 #container {
+  position: relative;
   margin: 0 auto;
 }
 
@@ -99,6 +136,12 @@ p {
 
 @media screen and (max-width: 470px) {
 
+.icons {
+  position: absolute;
+  top:   0;
+  right: 0;
+}
+
 #container {
   width: 300px
 }
@@ -113,8 +156,10 @@ p {
 
 @media screen and (min-width: 470px) and (max-width: 679px) {
 
-body {
-  /*background: blue;*/
+.icons {
+  position: absolute;
+  top:   0;
+  right: 0;
 }
 
 #container {
@@ -136,8 +181,10 @@ body {
 
 @media screen and (min-width: 680px) and (max-width: 889px) {
 
-body {
-  /*background: yellow;*/
+.icons {
+  position: absolute;
+  top:   0;
+  right: 0;
 }
 
 #container {
