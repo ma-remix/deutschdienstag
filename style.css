@@ -1,0 +1,214 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+
+  margin:  0;
+  padding: 0;
+}
+
+body {
+  background: #FFFAFA;
+  padding: 20px;
+
+  color: #171010;
+  font-family: Georgia, serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Helvetica, sans-serif;
+  margin:      10px 0;
+}
+
+h1 {
+  font-size:   50px;
+  line-height: 50px;
+
+  letter-spacing: -0.2rem;
+}
+
+p {
+  font-size:   15px;
+  line-height: 20px;
+  margin:      15px 0;
+}
+
+.clearfix:after {
+  clear:      both;
+  display:    block;
+  visibility: hidden;
+  content:    ".";
+}
+
+#container {
+  margin: 0 auto;
+}
+
+.card {
+  display: block;
+  position: relative;
+
+  float:  left;
+  width:  200px;
+  height: 200px;
+
+  margin: 0 10px 10px 0;
+
+  cursor: pointer;
+}
+
+
+.side {
+  position: absolute;
+  top:      0;
+  right:    0;
+  bottom:   0;
+  left:     0;
+
+  background: #171010;
+
+  padding: 10px;
+
+  font-size: 30px;
+  color: #FFFAFA;
+  text-decoration: none;
+
+  font-family: Helvetica, sans-serif;
+
+  overflow: hidden;
+
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-in;
+}
+
+.back.side {
+  background: red;
+
+  -webkit-transform: rotateY(180deg);
+
+  -webkit-backface-visibility: hidden;
+}
+
+.card.flipped .side {
+  -webkit-transform: rotateY(180deg);
+}
+
+.card.flipped .back.side {
+  -webkit-transform: rotateY(360deg);
+}
+
+@media screen and (max-width: 470px) {
+
+#container {
+  width: 300px
+}
+
+.card {
+  float:  none;
+  width:  300px;
+  height: 300px;
+}
+
+}
+
+@media screen and (min-width: 470px) and (max-width: 679px) {
+
+body {
+  /*background: blue;*/
+}
+
+#container {
+  width: 420px;
+}
+
+.card {
+  float:  left;
+  width:  200px;
+  height: 200px;
+}
+
+.card:nth-child(2n) {
+  margin-right: 0;
+  clear: right;
+}
+
+}
+
+@media screen and (min-width: 680px) and (max-width: 889px) {
+
+body {
+  /*background: yellow;*/
+}
+
+#container {
+  width: 620px;
+}
+
+.card {
+  float:  left;
+  width:  200px;
+  height: 200px;
+}
+
+.card:nth-child(2n) {
+  margin-right: 10px;
+  clear: none;
+}
+
+.card:nth-child(3n) {
+  margin-right: 0;
+  clear: right;
+}
+
+}
+
+@media screen and (min-width: 890px) {
+
+#container {
+  position: relative;
+
+  width: 830px;
+}
+
+#about {
+  float: left;
+  width: 210px;
+
+  padding: 0 20px 0 0;
+  text-align: left;
+}
+
+#about h1 {
+  display:        inline-block;
+  font-size:      35px;
+  line-height:    35px;
+  letter-spacing: -0.10rem;
+}
+
+#sounds {
+  float: right;
+  width: 620px;
+}
+
+footer {
+  clear: both;
+  width: inherit;
+}
+
+.card {
+  float:  left;
+  width:  200px;
+  height: 200px;
+}
+
+.card:nth-child(2n) {
+  margin-right: 10px;
+  clear: none;
+}
+
+.card:nth-child(3n) {
+  margin-right: 0;
+  clear: right;
+}
+
+}
