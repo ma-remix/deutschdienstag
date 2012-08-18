@@ -44,6 +44,10 @@ a:hover {
 }
 
 body {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
   background: #FFFAFA;
   padding: 20px;
 
@@ -143,12 +147,14 @@ p {
 }
 
 #container {
-  width: 300px
+  width: 300px;
+  max-width: 100%;
 }
 
 .card {
   float:  none;
   width:  300px;
+  max-width: 100%;
   height: 300px;
 }
 
